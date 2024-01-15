@@ -10,8 +10,8 @@ import com.example.hw3android2.databinding.FragmentFirstBinding
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
 
-    private var _binding:FragmentFirstBinding? = null
-    private val binding:FragmentFirstBinding get() = _binding!!
+    private var _binding: FragmentFirstBinding? = null
+    private val binding: FragmentFirstBinding get() = _binding!!
     private val preferencesHelper: PreferencesHelper by lazy {
         PreferencesHelper(context ?: requireContext())
     }
@@ -26,10 +26,10 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        onStartClick()
+        onSkipClick()
     }
 
-    private fun onStartClick() {
+    private fun onSkipClick() {
         binding.btnSkip.setOnClickListener {
             preferencesHelper.isShownOnBoard = true
             findNavController().navigate(R.id.action_boardFragment_to_homeFragment)

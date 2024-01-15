@@ -10,4 +10,12 @@
     <string name="start_work">Начать работу</string>
     <string name="funci_third">Куча функции и интересных фишек</string>
     <string name="shared_preferences_name">app_shared_preferences</string>
+    <string name="notes">Заметки</string>
+    <string name="search_notes">Поиск заметок</string>
+    <string name="search_notes_one">Поиск заметок</string>
+    <string name="time">12:45</string>
+    <string name="work_spisok">Работы с проектом,сделать домашку,убраться и..</string>
+    <string name="data">6 июня</string>
+    <string name="have_to_go">Нужно сделать:</string>
+    <string name="data_time">6 июня \n 17:10</string>
 </resources>

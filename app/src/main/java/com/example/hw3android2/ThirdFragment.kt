@@ -11,8 +11,8 @@ import com.example.hw3android2.databinding.FragmentThirdBinding
 
 class ThirdFragment : Fragment(R.layout.fragment_third) {
 
-    private var _binding:FragmentThirdBinding? =null
-    private val binding:FragmentThirdBinding get() = _binding!!
+    private var _binding: FragmentThirdBinding? = null
+    private val binding: FragmentThirdBinding get() = _binding!!
     private val preferencesHelper: PreferencesHelper by lazy {
         PreferencesHelper(context ?: requireContext())
     }

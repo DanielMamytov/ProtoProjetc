@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/mc_pan"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:backgroundTint="@color/light_black"
+    app:cardCornerRadius="20dp">
+
+    <TextView
+        android:id="@+id/tv_have"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_to_go"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/dark_gray"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/dark_gray"
+        android:layout_gravity="center_vertical"
+        android:text="@string/work_spisok"/>
+
+    <TextView
+        android:id="@+id/tv_data_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_time"
+        android:textSize="12sp"
+        android:textColor="@color/dark_gray"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="end"/>
+
+</com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -26,18 +26,18 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        onStartClick()
+        onSkipClick()
     }
 
-    private fun onStartClick() {
+    private fun onSkipClick() {
         binding.btnScip.setOnClickListener {
             preferencesHelper.isShownOnBoard = true
             findNavController().navigate(R.id.action_boardFragment_to_homeFragment)
         }
     }
 
-        override fun onDestroyView() {
-            super.onDestroyView()
-            _binding = null
-        }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
+}
