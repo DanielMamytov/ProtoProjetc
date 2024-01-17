@@ -1,9 +1,11 @@
-package com.example.hw3android2
+package com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
+import com.example.hw3android2.R
 import com.example.hw3android2.databinding.ActivityMainBinding
+import com.example.utils.PreferencesHelper
 
 class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null

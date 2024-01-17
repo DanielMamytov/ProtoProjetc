@@ -1,24 +1,24 @@
-package com.example.hw3android2
+package com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.hw3android2.HomeModel
 import com.example.hw3android2.databinding.ItemPanelBinding
+import com.example.hw3android2.noteapp.data.local.room.dao.entities.Note
 
 class HomeAdapter : RecyclerView.Adapter<HomeAdapter.NoteViewHolder>() {
-    private var homeList = mutableListOf<HomeModel>()
+    private var homeList = listOf<Note>()
 
-    fun setNoteList(noteList: MutableList<HomeModel>) {
+    fun setNoteList(noteList: List<Note>) {
         this.homeList = noteList
     }
 
     class NoteViewHolder(private val binding: ItemPanelBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun onBind(HomeModel: HomeModel) {
+        fun onBind(HomeModel: Note) {
             binding.tvHave.text = HomeModel.title
-            binding.tvDataTime.text = HomeModel.data
-            binding.tvWork.text = HomeModel.note
-
+            binding.tvWork.text = HomeModel.description
 
         }
     }

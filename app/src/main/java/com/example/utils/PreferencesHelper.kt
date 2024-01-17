@@ -1,6 +1,7 @@
-package com.example.hw3android2
+package com.example.utils
 
 import android.content.Context
+import com.example.hw3android2.R
 
 private const val IS_SHOWN_ON_BOARD_KEY = "isShownOnBoard"
 

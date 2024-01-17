@@ -1,13 +1,19 @@
-package com.example.hw3android2
+package com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import androidx.room.Dao
+import com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.adapters.HomeAdapter
+import com.example.hw3android2.HomeModel
+import com.example.hw3android2.R
 import com.example.hw3android2.databinding.FragmentHomeBinding
+import com.example.utils.App
 
-
+@Dao
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private var _binding: FragmentHomeBinding? = null
@@ -25,16 +31,23 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         siriliziaciy()
+        navigateToAddFragment()
+        getNotesFromRoom()
+
+    }
+
+    private fun getNotesFromRoom() {
+       val noteList = App.db.noteDao().getAllNotes()
+       noteAdapter.setNoteList(noteList)
+    }
+
+    private fun navigateToAddFragment() = with(binding) {
+        btnAdd.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_addNoteFragment2)
+        }
     }
 
     private fun siriliziaciy() {
-        noteAdapter.setNoteList(
-            mutableListOf(
-                HomeModel("Нужно сделать:", "Работы с проектом,сделать домашку,убраться и..", "6 июня\n 17:10"),
-                HomeModel("Нужно сделать:", "Работы с проектом,сделать домашку,убраться и..", "6 июня\n 17:10"),
-                HomeModel("Нужно сделать:", "Работы с проектом,сделать домашку,убраться и..", "6 июня\n 17:10")
-                )
-            )
         binding.rvPanel.adapter = noteAdapter
     }
 
@@ -42,6 +55,5 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onDestroyView()
         _binding = null
     }
-
 
 }

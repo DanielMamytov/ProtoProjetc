@@ -1,11 +1,12 @@
-package com.example.hw3android2
+package com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.viewpager.widget.PagerAdapter
+import com.example.hw3android2.R
+import com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.adapters.RacersAdapter
 import com.example.hw3android2.databinding.FragmentBoardBinding
 
 class BoardFragment : Fragment(R.layout.fragment_board) {

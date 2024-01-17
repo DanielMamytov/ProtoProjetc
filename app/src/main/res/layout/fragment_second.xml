@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
     android:orientation="vertical"
-    tools:context=".SecondFragment">
+    tools:context=".noteapp.data.local.room.dao.entities.ui.fragments.SecondFragment">
 
     <Button
         android:id="@+id/btn_scip"

@@ -18,4 +18,12 @@
     <string name="data">6 июня</string>
     <string name="have_to_go">Нужно сделать:</string>
     <string name="data_time">6 июня \n 17:10</string>
+    <string name="search_notes_on">Поиск заметок</string>
+    <string name="may">30 мая</string>
+    <string name="sixteen">16:00</string>
+    <string name="need_to_do">Ведите заметку:</string>
+    <string name="need_to">Поиск заметок:</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
 </resources>

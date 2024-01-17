@@ -2,6 +2,8 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
+
+    kotlin("kapt")
 }
 
 android {
@@ -58,4 +60,9 @@ dependencies {
 
     //Dots_Indicator
     implementation ("com.tbuonomo:dotsindicator:4.3")
+
+    val room_version = "2.6.1"
+
+    implementation("androidx.room:room-runtime:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
 }
