@@ -1,4 +1,4 @@
-package com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.activity
+package com.example.hw3android2.noteapp.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

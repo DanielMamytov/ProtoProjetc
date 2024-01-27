@@ -1,4 +1,4 @@
-package com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.adapters
+package com.example.hw3android2.noteapp.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -19,12 +19,12 @@ class NotesAdapter(
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NotesAdapter.NoteViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         val binding = ItemPanelBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return NoteViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: NotesAdapter.NoteViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         holder.onBind(noteList[position])
     }
 

@@ -1,19 +1,16 @@
-package com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.fragments
+package com.example.hw3android2.noteapp.ui.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.room.Dao
-import com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.adapters.HomeAdapter
-import com.example.hw3android2.HomeModel
 import com.example.hw3android2.R
 import com.example.hw3android2.databinding.FragmentHomeBinding
+import com.example.hw3android2.noteapp.ui.adapters.HomeAdapter
 import com.example.utils.App
 
-@Dao
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private var _binding: FragmentHomeBinding? = null

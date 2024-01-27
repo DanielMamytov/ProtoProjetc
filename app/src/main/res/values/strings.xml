@@ -26,4 +26,12 @@
     <string name="one">1</string>
     <string name="two">2</string>
     <string name="three">3</string>
+    <string name="registration_phone_number">Регистрация по номеру</string>
+    <string name="phone_number_place_holder_text">+996 --- --- ---</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="code_place_holder">Ваш код</string>
+    <string name="code_hint">Код</string>
+    <string name="get_code">Получить код</string>
+    <string name="send_again">Отправить снова</string>
+    <string name="filld_error_text">Заоплните поле</string>
 </resources>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".noteapp.data.local.room.dao.entities.ui.fragments.add.AddNoteFragment">
+    tools:context=".noteapp.ui.fragments.add.AddNoteFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

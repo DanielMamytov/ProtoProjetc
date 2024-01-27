@@ -1,4 +1,4 @@
-package com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.fragments.add
+package com.example.hw3android2.noteapp.ui.fragments.add
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1091859390344",
+    "project_id": "hw3android2",
+    "storage_bucket": "hw3android2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091859390344:android:79dda6afc07f70cfa4643d",
+        "android_client_info": {
+          "package_name": "com.example.hw3android2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIBDLTH6_Tyq9u9PXn7tuU2kqwVNuCS-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

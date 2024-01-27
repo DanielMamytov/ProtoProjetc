@@ -1,9 +1,8 @@
-package com.example.hw3android2.noteapp.data.local.room.dao.entities.ui.adapters
+package com.example.hw3android2.noteapp.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.hw3android2.HomeModel
 import com.example.hw3android2.databinding.ItemPanelBinding
 import com.example.hw3android2.noteapp.data.local.room.dao.entities.Note
 
@@ -16,9 +15,9 @@ class HomeAdapter : RecyclerView.Adapter<HomeAdapter.NoteViewHolder>() {
 
     class NoteViewHolder(private val binding: ItemPanelBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun onBind(HomeModel: Note) {
-            binding.tvHave.text = HomeModel.title
-            binding.tvWork.text = HomeModel.description
+        fun onBind(homeModel: Note) {
+            binding.tvHave.text = homeModel.title
+            binding.tvWork.text = homeModel.description
 
         }
     }
