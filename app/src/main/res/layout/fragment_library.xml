@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".noteapp.ui.fragments.library.LibraryFragment">
+
+    <TextView
+        android:id="@+id/tv_find"
+        android:layout_width="168dp"
+        android:layout_height="38dp"
+        android:text="@string/library"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/iv_bell"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/bell"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/et_search"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounder_search"
+        android:drawableStart="@drawable/searches"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/find"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_find"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/icon_one"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_search"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/tv_rucovodstvo_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rucovodstvo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_lorem_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="11dp"
+            android:layout_marginStart="14dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/icon_two"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_one"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/tv_rucovodstvo_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rucovodstvo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_lorem_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="11dp"
+            android:layout_marginStart="14dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/icon_three"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_two"
+        >
+
+        <TextView
+            android:id="@+id/tv_rucovodstvo_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rucovodstvo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_lorem_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="11dp"
+            android:layout_marginStart="14dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/icon_four"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_three"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/tv_rucovodstvo_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rucovodstvo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_lorem_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="11dp"
+            android:layout_marginStart="14dp"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/icon_five"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_four"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/tv_rucovodstvo_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rucovodstvo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_lorem_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="11dp"
+            android:layout_marginStart="14dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/icon_six"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_four"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/tv_rucovodstvo_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rucovodstvo"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_lorem_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="11dp"
+            android:layout_marginStart="14dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
