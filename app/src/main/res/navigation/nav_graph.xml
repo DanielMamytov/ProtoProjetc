@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/boardFragment">
+    app:startDestination="@id/searchFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -28,4 +28,14 @@
         android:name="com.example.hw3android2.noteapp.ui.fragments.add.AddNoteFragment"
         android:label="fragment_add_note"
         tools:layout="@layout/fragment_add_note" />
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.hw3android2.noteapp.ui.fragments.library.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.hw3android2.noteapp.ui.fragments.library.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
 </navigation>

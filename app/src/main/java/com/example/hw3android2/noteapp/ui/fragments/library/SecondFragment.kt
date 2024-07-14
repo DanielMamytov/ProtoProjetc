@@ -11,7 +11,7 @@ import com.example.hw3android2.databinding.FragmentSecondBinding
 
 class SecondFragment : Fragment(R.layout.fragment_second2) {
 
-    private val binding by viewBinding(FragmentSecondBinding::bind)
+    private lateinit var binding: FragmentSecondBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

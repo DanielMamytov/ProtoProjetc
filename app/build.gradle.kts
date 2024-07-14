@@ -2,7 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
-    id("com.google.gms.google-services")
+//    id("com.google.gms.google-services")
     kotlin("kapt")
 }
 
@@ -67,12 +67,12 @@ dependencies {
     implementation("androidx.room:room-runtime:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
 
-    //Инпортируем спецификации для платформы Firebase
-    implementation(platform("com.google.firebase:firebase-bom:32.7.1"))
-    //Добавляем зависимости для библиоетки аутентификации Firebase
-    //При использовании спецификации вы не указываете версию Firebase
-    implementation("com.google.firebase:firebase-auth")
-
-    implementation("com.google.firebase:firebase-analytics")
+//    //Инпортируем спецификации для платформы Firebase
+//    implementation(platform("com.google.firebase:firebase-bom:32.7.1"))
+//    //Добавляем зависимости для библиоетки аутентификации Firebase
+//    //При использовании спецификации вы не указываете версию Firebase
+//    implementation("com.google.firebase:firebase-auth")
+//
+//    implementation("com.google.firebase:firebase-analytics")
 
 }

@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             val navGraph = navController.navInflater.inflate(R.navigation.nav_graph)
             if (preferencesHelper.isShownOnBoard) {
-                navGraph.setStartDestination(R.id.homeFragment)
+                navGraph.setStartDestination(R.id.searchFragment)
             } else {
-                navGraph.setStartDestination(R.id.boardFragment)
+                navGraph.setStartDestination(R.id.searchFragment)
             }
 
             navController.graph = navGraph

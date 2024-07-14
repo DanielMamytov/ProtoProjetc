@@ -22,62 +22,40 @@
         android:textColor="@color/black"
         android:textSize="16sp" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/icon_one"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="18dp"
-        android:elevation="10dp">
+        android:layout_height="match_parent"/>
 
-        <TextView
-            android:id="@+id/tv_rucovodstvo_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/rucovodstvo"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="11dp"
-            android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/tv_lorem_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/search_lorem"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="11dp"
-            android:layout_marginStart="14dp"/>
 
-    </com.google.android.material.card.MaterialCardView>
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/icon_two"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:elevation="10dp">-->
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/icon_two"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="10dp"
-        android:elevation="10dp">
+<!--        <TextView-->
+<!--            android:id="@+id/tv_rucovodstvo_two"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/centre_square"-->
+<!--            android:layout_marginStart="14dp"-->
+<!--            android:layout_marginTop="11dp"-->
+<!--            android:textStyle="bold"/>-->
 
-        <TextView
-            android:id="@+id/tv_rucovodstvo_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/centre_square"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="11dp"
-            android:textStyle="bold"/>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_lorem_two"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/square"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_marginBottom="11dp"-->
+<!--            android:layout_marginStart="14dp"/>-->
 
-        <TextView
-            android:id="@+id/tv_lorem_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/square"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="11dp"
-            android:layout_marginStart="14dp"/>
-
-    </com.google.android.material.card.MaterialCardView>
+<!--    </com.google.android.material.card.MaterialCardView>-->
 
 </LinearLayout>
